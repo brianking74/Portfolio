@@ -41,6 +41,7 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-4 md:gap-8">
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-600">
             <button onClick={() => scrollToSection('work')} className="hover:text-black transition-colors">Work</button>
+            <button onClick={() => scrollToSection('projects')} className="hover:text-black transition-colors">Projects</button>
             <button onClick={() => scrollToSection('experience')} className="hover:text-black transition-colors">Experience</button>
             <button onClick={() => scrollToSection('about')} className="hover:text-black transition-colors">About</button>
           </div>

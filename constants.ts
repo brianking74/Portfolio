@@ -1,4 +1,4 @@
-import { ExperienceItem, Metric, EducationItem } from './types';
+import { ExperienceItem, Metric, EducationItem, ProjectItem } from './types';
 
 export const SOCIAL_LINKS = {
   email: "brianking@sky.com",
@@ -14,6 +14,11 @@ export const METRICS: Metric[] = [
     context: "Revenue growth 2020-2023 at Cellarmaster via platform optimization."
   },
   {
+    label: "Online Sales (2020)",
+    value: "HK$1M+",
+    context: "Generated combined B2B/B2C sales via digital initiatives at Sarment."
+  },
+  {
     label: "ROI on Ad Spend",
     value: "7.8x",
     context: "Generated HK$35M revenue against HK$4.5M budget at Compass Offices."
@@ -22,11 +27,37 @@ export const METRICS: Metric[] = [
     label: "Organic Leads",
     value: "+57%",
     context: "Increase in organic search leads over 3 years at Opsview Ltd."
+  }
+];
+
+export const CLIENT_PROJECTS: ProjectItem[] = [
+  {
+    id: "chalice",
+    title: "Chalice & Cru",
+    url: "https://www.chaliceandcru.com",
+    description: "Full e-commerce website built on WordPress utilizing AI for dynamic content generation and SEO optimisation.",
+    tags: ["WordPress", "WooCommerce", "AI Integration"]
   },
   {
-    label: "Customer Growth",
-    value: "100%+",
-    context: "Increase in purchasing customers over 36 months via acquisition campaigns."
+    id: "efe",
+    title: "EFE Hong Kong",
+    url: "https://www.efehongkong.com",
+    description: "Promotional website featuring a custom online booking system for a professional local football coach.",
+    tags: ["WordPress", "Booking System", "Sports Marketing"]
+  },
+  {
+    id: "asiacrypto",
+    title: "Asia Crypto News",
+    url: "https://www.asiacryptonews.com",
+    description: "News and education portal focused on cryptocurrency markets in Asia, built for high-traffic scalability.",
+    tags: ["WordPress", "News Portal", "FinTech"]
+  },
+  {
+    id: "barkhams",
+    title: "Barkhams Digital",
+    url: "https://www.barkhamsdigital.com",
+    description: "Official agency website for my marketing consultancy business showcasing services, portfolio, and B2B case studies.",
+    tags: ["Wix", "Agency Portfolio", "B2B"]
   }
 ];
 

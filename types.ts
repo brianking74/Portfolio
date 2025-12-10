@@ -21,9 +21,18 @@ export interface EducationItem {
   institution: string;
 }
 
+export interface ProjectItem {
+  id: string;
+  title: string;
+  url: string;
+  description: string;
+  tags: string[];
+}
+
 export enum SectionId {
   HERO = 'hero',
   STATS = 'stats',
+  PROJECTS = 'projects',
   EXPERIENCE = 'experience',
   EDUCATION = 'education',
   CONTACT = 'contact'

@@ -17,7 +17,7 @@ export const ExperienceTimeline: React.FC = () => {
       <div className="relative">
         {EXPERIENCE.map((job, index) => (
           <Reveal key={job.id} className="w-full mb-0 group" delay={index * 100}>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 py-12 border-b border-neutral-200 transition-colors group-hover:border-black">
+            <div id={job.id} className="scroll-mt-32 grid grid-cols-1 md:grid-cols-12 gap-8 py-12 border-b border-neutral-200 transition-colors group-hover:border-black">
               
               {/* Period - Left Col */}
               <div className="md:col-span-3 text-lg font-mono text-neutral-500 group-hover:text-black transition-colors">
