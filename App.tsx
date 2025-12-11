@@ -6,10 +6,12 @@ import { ClientProjects } from './components/ClientProjects';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
 import { Education } from './components/Education';
 import { Footer } from './components/Footer';
+import { MouseFollower } from './components/MouseFollower';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-neutral-900 font-sans selection:bg-yellow-200">
+    <div className="min-h-screen bg-white text-neutral-900 font-sans selection:bg-yellow-200 cursor-default">
+      <MouseFollower />
       <Navbar />
       <Hero />
       <StatsDashboard />
